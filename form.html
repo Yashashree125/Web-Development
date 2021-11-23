@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign up Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">Sign up Form</h1>
+		<form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+
+			<div class="contact-form">
+				<img alt="" class="image" src="https://i.postimg.cc/zDyt7KCv/a1.jpg">
+			<div class="font">Username</div>
+			<input autocomplete="off" type="text" name="username">
+			<div id="username_error">Please fill up your Username</div>
+
+
+			<div class="font font1">Email</div>
+			<input autocomplete="off" type="text" name="email">
+			<div id="email_error">Please fill up your Email [email@example.com]</div>
+
+			
+
+
+			<div class="font font2">Password</div>
+			<input type="password" name="password">
+			<div id="password_error">Password must have atleast 6 characters</div>
+
+			<!--input type="button" value="Sign Up" class="button1" />
+            <input type="reset" value="Clear Form" class="button2" /-->
+
+			<button type="submit">Login</button>
+			<button type="reset">Clear Form</button>
+		</form>
+	</div>	
+	<script src="form.js"></script>
+</body>
+</html>
